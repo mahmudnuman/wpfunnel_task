@@ -1,5 +1,8 @@
 Implementation Details
+
 The solution is implemented by extending the existing WPFNL_Checkout class in the WPFunnels plugin.breakdown of the key components:
+
+#add register_activation_hook(__FILE__, array('WPFNL_Checkout', 'create_customers_table')); in \wp-content\plugins\wpfunnels\wpfnl.php 
 
 Custom Database Table Creation:
 
